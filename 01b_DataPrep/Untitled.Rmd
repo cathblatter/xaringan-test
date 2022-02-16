@@ -1,0 +1,58 @@
+---
+title: Main title
+subtitle: Subtitle
+author: Author Name
+date: "20.02.2020"
+output:
+  xaringan::moon_reader:
+    seal: true # false = custom title page
+    self_contain: false
+    css: ["css/unibas-mint-custom.css"]
+    nature:
+      slideNumberFormat: "%current%/%total%"
+      highlightStyle: github
+      highlightLines: true
+      highlightSpans: false
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, eval = T, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      warnings = FALSE, 
+                      echo = TRUE, 
+                      eval = TRUE, 
+                      message = FALSE)
+```
+
+layout: true
+<div class="footer">`r rmarkdown::metadata$author` | `r rmarkdown::metadata$title` | `r rmarkdown::metadata$date` </div>
+---
+
+# Test
+
+- some 
+
+- bullet 
+
+- points
+
+---
+
+# Image content
+
+<img src="../01b_DataPrep/img/test.png" width=600>
+
+---
+layout:false
+class: title-slide-final
+
+# Thank you for your attention
+
+<div style="position: absolute; left: 100px; bottom: 200px;">
+
+`r icons::fontawesome("github")` your_handle </a>  
+`r icons::fontawesome("twitter")` @your_handle</a>  
+`r icons::academicons("orcid")` https://orcid.org/0000-XXXX-XXXX-XXXX </a>
+
+<div>
